@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "RITLPhotoBridgeDelegate.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 进行桥接进行回调的Manager
 @interface RITLPhotoBridgeManager : NSObject
+
+/// 代理
+@property (nonatomic, weak) id <RITLPhotoBridgeDelegate> delegate;
 
 /// 获取图片之后的回调
 @property (nonatomic, copy, nullable)void(^RITLBridgeGetImageBlock)(NSArray <UIImage *> *);

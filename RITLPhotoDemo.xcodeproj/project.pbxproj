@@ -36,7 +36,7 @@
 		DB2E51591F73D1B700B84F7E /* RITLPhotoGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2E51361F73D1B600B84F7E /* RITLPhotoGroupViewController.m */; };
 		DB2E515A1F73D1B700B84F7E /* RITLPhotoGroupViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2E51381F73D1B600B84F7E /* RITLPhotoGroupViewModel.m */; };
 		DB2E515B1F73D1B700B84F7E /* RITLPhotoBridgeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2E513B1F73D1B700B84F7E /* RITLPhotoBridgeManager.m */; };
-		DB2E515C1F73D1B700B84F7E /* RITLPhotoCacheManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = DB2E513D1F73D1B700B84F7E /* RITLPhotoCacheManager.mm */; };
+		DB2E515C1F73D1B700B84F7E /* RITLPhotoCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2E513D1F73D1B700B84F7E /* RITLPhotoCacheManager.m */; };
 		DB2E515D1F73D1B700B84F7E /* RITLPhotoHandleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2E513F1F73D1B700B84F7E /* RITLPhotoHandleManager.m */; };
 		DBA276791DED28F6007F4E0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA276101DED28F5007F4E0B /* Assets.xcassets */; };
 		DBA2767A1DED28F6007F4E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA276111DED28F5007F4E0B /* LaunchScreen.storyboard */; };
@@ -69,6 +69,7 @@
 		8C9C49787206D8CED4C8EB1E /* Pods-RITLPhotoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RITLPhotoDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RITLPhotoDemo/Pods-RITLPhotoDemo.release.xcconfig"; sourceTree = "<group>"; };
 		BF340BD6B80EBA5B4750AEF2 /* Pods-RITLPhotoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RITLPhotoDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RITLPhotoDemo/Pods-RITLPhotoDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CE0C1B984DF64B17C3BF117E /* libPods-RITLPhotoDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RITLPhotoDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB2460681F7DE75100693242 /* RITLPhotoBridgeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLPhotoBridgeDelegate.h; sourceTree = "<group>"; };
 		DB2E50F11F73D1B600B84F7E /* RITLPhotoNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLPhotoNavigationViewController.h; sourceTree = "<group>"; };
 		DB2E50F21F73D1B600B84F7E /* RITLPhotoNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLPhotoNavigationViewController.m; sourceTree = "<group>"; };
 		DB2E50F31F73D1B600B84F7E /* RITLPhotoNavigationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLPhotoNavigationViewModel.h; sourceTree = "<group>"; };
@@ -135,7 +136,7 @@
 		DB2E513A1F73D1B700B84F7E /* RITLPhotoBridgeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLPhotoBridgeManager.h; sourceTree = "<group>"; };
 		DB2E513B1F73D1B700B84F7E /* RITLPhotoBridgeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLPhotoBridgeManager.m; sourceTree = "<group>"; };
 		DB2E513C1F73D1B700B84F7E /* RITLPhotoCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLPhotoCacheManager.h; sourceTree = "<group>"; };
-		DB2E513D1F73D1B700B84F7E /* RITLPhotoCacheManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RITLPhotoCacheManager.mm; sourceTree = "<group>"; };
+		DB2E513D1F73D1B700B84F7E /* RITLPhotoCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLPhotoCacheManager.m; sourceTree = "<group>"; };
 		DB2E513E1F73D1B700B84F7E /* RITLPhotoHandleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITLPhotoHandleManager.h; sourceTree = "<group>"; };
 		DB2E513F1F73D1B700B84F7E /* RITLPhotoHandleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITLPhotoHandleManager.m; sourceTree = "<group>"; };
 		DB302F281D35E3C7007B42C3 /* RITLPhotoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RITLPhotoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -335,10 +336,11 @@
 		DB2E51391F73D1B700B84F7E /* PhotoDataManager */ = {
 			isa = PBXGroup;
 			children = (
+				DB2460681F7DE75100693242 /* RITLPhotoBridgeDelegate.h */,
 				DB2E513A1F73D1B700B84F7E /* RITLPhotoBridgeManager.h */,
 				DB2E513B1F73D1B700B84F7E /* RITLPhotoBridgeManager.m */,
 				DB2E513C1F73D1B700B84F7E /* RITLPhotoCacheManager.h */,
-				DB2E513D1F73D1B700B84F7E /* RITLPhotoCacheManager.mm */,
+				DB2E513D1F73D1B700B84F7E /* RITLPhotoCacheManager.m */,
 				DB2E513E1F73D1B700B84F7E /* RITLPhotoHandleManager.h */,
 				DB2E513F1F73D1B700B84F7E /* RITLPhotoHandleManager.m */,
 			);
@@ -589,7 +591,7 @@
 				DB2E51521F73D1B700B84F7E /* PHImageRequestOptions+RITLPhotoRepresentation.m in Sources */,
 				DB2E51511F73D1B700B84F7E /* PHFetchResult+RITLPhotoRepresentation.m in Sources */,
 				DB2E51461F73D1B700B84F7E /* RITLPhotosViewController.m in Sources */,
-				DB2E515C1F73D1B700B84F7E /* RITLPhotoCacheManager.mm in Sources */,
+				DB2E515C1F73D1B700B84F7E /* RITLPhotoCacheManager.m in Sources */,
 				DB2E51481F73D1B700B84F7E /* RITLPhotoBrowseCell.m in Sources */,
 				DB2E514C1F73D1B700B84F7E /* RITLPhotoRequestStore.m in Sources */,
 				DB2E514F1F73D1B700B84F7E /* PHAsset+RITLPhotoRepresentation.m in Sources */,

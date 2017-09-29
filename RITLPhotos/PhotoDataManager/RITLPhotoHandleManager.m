@@ -10,7 +10,8 @@
 
 @implementation RITLPhotoHandleManager
 
-+(NSArray<PHAsset *> *)assetForAssets:(NSArray<PHAsset *> *)assets status:(BOOL *)status
+//+(NSArray<PHAsset *> *)assetForAssets:(NSArray<PHAsset *> *)assets status:(BOOL *)status
++(NSArray<PHAsset *> *)assetForAssets:(NSArray<PHAsset *> *)assets status:(NSArray <NSNumber *> *)status
 {
     NSMutableArray <PHAsset *> * assetsHandle = [NSMutableArray arrayWithCapacity:assets.count];
     
