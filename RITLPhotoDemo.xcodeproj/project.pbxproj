@@ -196,8 +196,8 @@
 			children = (
 				DB6BFFA320B2CD2B003C68AF /* RITLPhotos.h */,
 				DB51171020B30B6B00C54622 /* Protocol */,
-				DB51170D20B30B6B00C54622 /* RITLPhotosController */,
 				DB6BFFA420B2CD2B003C68AF /* RITLGroupModule */,
+				DB51170D20B30B6B00C54622 /* RITLPhotosController */,
 				DB6BFFA920B2CD2B003C68AF /* RITLData */,
 				DB6BFFAF20B2CD2B003C68AF /* RITLConfig */,
 				DB6BFFB220B2CD2B003C68AF /* RITLViews */,
@@ -378,14 +378,14 @@
 				TargetAttributes = {
 					DB302F271D35E3C7007B42C3 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 8S4NWFZC5J;
+						DevelopmentTeam = HC59PF4HDN;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = DB302F231D35E3C7007B42C3 /* Build configuration list for PBXProject "RITLPhotoDemo" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -614,7 +614,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8S4NWFZC5J;
+				DEVELOPMENT_TEAM = HC59PF4HDN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -628,7 +628,7 @@
 					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = " $(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yue.RITLPhotos-1";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yue.photos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -647,7 +647,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8S4NWFZC5J;
+				DEVELOPMENT_TEAM = HC59PF4HDN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -661,7 +661,7 @@
 					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = " $(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yue.RITLPhotos-1";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yue.photos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

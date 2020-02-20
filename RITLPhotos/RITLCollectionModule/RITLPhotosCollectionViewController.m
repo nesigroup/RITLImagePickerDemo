@@ -183,7 +183,10 @@ static NSString *const reuseIdentifier = @"photo";
         
         [self resetCachedAssets];
         
-        self.assets = [PHAsset fetchAssetsInAssetCollection:self.assetCollection options:nil];
+        PHFetchOptions *option = [PHFetchOptions new];
+        option.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:false] ];
+        
+        self.assets = [PHAsset fetchAssetsInAssetCollection:self.assetCollection options:option];//逆序排列
         
         //reload
         self.collectionView.hidden = true;
@@ -194,11 +197,11 @@ static NSString *const reuseIdentifier = @"photo";
         
         //计算行数,并滑动到最后一行
         self.collectionView.hidden = false;
-        
-        [self collectionViewScrollToBottomAnimatedNoneHandler:^NSInteger(NSInteger row) {
-            
-            return row;
-        }];
+//
+//        [self collectionViewScrollToBottomAnimatedNoneHandler:^NSInteger(NSInteger row) {
+//
+//            return row;
+//        }];
         
     } denied:^{}];
     
@@ -283,11 +286,8 @@ static NSString *const reuseIdentifier = @"photo";
 - (void)dismissPhotoControllers
 {
     if(self.navigationController.presentingViewController){//如果是模态弹出
-        
         [self.navigationController dismissViewControllerAnimated:true completion:nil];
-        
     }else if(self.navigationController){
-        
         [self.navigationController popViewControllerAnimated:true];
     }
 }
@@ -295,14 +295,12 @@ static NSString *const reuseIdentifier = @"photo";
 
 #pragma mark <UICollectionViewDataSource>
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
-{
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
 
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.assets ? self.assets.count : 0;
 }
 
@@ -343,8 +341,7 @@ static NSString *const reuseIdentifier = @"photo";
 }
 
 // set value
-- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
     //Asset
     PHAsset *asset = [self.assets objectAtIndex:indexPath.item];
     //强转
@@ -511,7 +508,7 @@ minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
         RITLPhotosHorBrowseViewController *browerController = RITLPhotosHorBrowseViewController.new;
         
         RITLPhotosBrowseAllDataSource *dataSource = RITLPhotosBrowseAllDataSource.new;
-        dataSource.collection = self.assetCollection;
+        [dataSource setCollection:self.assetCollection isReverse:true];
         dataSource.asset = asset;
         
         browerController.dataSource = dataSource;
